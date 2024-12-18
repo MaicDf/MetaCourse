@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Little Lemon</title>
+
+    <meta property="og:title" content="Our Menu" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="logo.png" />
+    <meta property="og:url" content="https://littlelemon/" />
+    <meta
+      property="og:description"
+      content="Little Lemon is a family-owned Mediterranean restaurant, focused on traditional recipes served with a modern twist."
+    />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="Little Lemon" />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <img src="logo.png" />
+    </header>
+    <main></main>
+    <form>
+      <div>
+        <label for="username">Username</label>
+        <input
+          type="text"
+          id="username"
+          name="mylabel"
+          placeholder="Enter your username"
+          minlength="2"
+          required
+        />
+      </div>
+      <div>
+        <label for="mypassword">Password</label>
+        <input
+          type="password"
+          id="mypassword"
+          placeholder="Your password"
+          name="passwordholder"
+          minlength="2"
+          required
+        />
+      </div>
+      <button type="submit">Log in</button>
+    </form>
+    <form>
+      <legend>Qualificaiton</legend>
+
+      <label for="course">Choose a course:</label><br />
+      <label for="flowers">Favourite flower:</label><br />
+      <input list="flowers" name="flowers" />
+      <datalist id="flowers">
+        <option value="Rose"></option>
+        <option value="Lily"></option>
+        <option value="Tulip"></option>
+        <option value="Daffodil"></option>
+        <option value="Orchid"></option>
+      </datalist>
+
+      <button type="submit">Enviar</button>
+    </form>
+    <div>
+      <video controls width="320" height="240">
+        <source src="../src/video.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div>
+      <form>
+        <form>
+          <label for="rating">Rating</label>
+          <input
+            type="range"
+            min="1"
+            max="5"
+            id="rating"
+            name="rating"
+            style="width: 100%"
+          />
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              width: 100%;
+              position: relative;
+              margin-top: 5px;
+            "
+          >
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>5</span>
+          </div>
+          <button type="submit">Submit Rating</button>
+        </form>
+      </form>
+    </div>
+    <iframe src="logo.png" sandbox></iframe>
+  </body>
+</html>
